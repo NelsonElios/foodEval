@@ -1,0 +1,28 @@
+<!--
+  Generated template for the ScanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>scan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-fab bottom right>
+  <button ion-fab (click)="scanBarCode()" >
+  <ion-icon name="barcode"></ion-icon>
+  </button>
+</ion-fab>
+<ion-card *ngIf="api_response_row">
+  <ion-card-content>
+    {{api_response['product']}}
+
+  </ion-card-content>
+</ion-card>
+</ion-content>
